@@ -438,7 +438,6 @@ QUnit.test( 'Rebase', function ( assert ) {
 		caseItem.ops.forEach( function ( op, i ) {
 			if ( op[ 0 ] === 'debugger' ) {
 				// eslint-disable-next-line no-debugger
-				debugger;
 				// eslint-disable-next-line qunit/no-early-return
 				return;
 			}

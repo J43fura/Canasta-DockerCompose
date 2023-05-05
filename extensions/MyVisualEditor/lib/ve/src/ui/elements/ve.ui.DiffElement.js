@@ -61,6 +61,7 @@ ve.ui.DiffElement = function VeUiDiffElement(visualDiff, config) {
       this.$sidebar.append(this.descriptions.$element)
     )
     .addClass("ve-ui-diffElement");
+  console.log("this.$element", this.$element);
 };
 
 /* Inheritance */
@@ -555,6 +556,8 @@ ve.ui.DiffElement.prototype.wrapNodeData = function (nodeDoc, nodeData) {
   ).body;
 
   // Convert NodeList to real array
+  console.log("documentSlice", documentSlice);
+  console.log("nodeElements", nodeElements);
   return Array.prototype.slice.call(nodeElements.childNodes);
 };
 
@@ -594,7 +597,6 @@ ve.ui.DiffElement.prototype.getChangedNodeElements = function (
   move
 ) {
   var nodeData = this.getChangedNodeData(diff, oldNode, newNode, move);
-
   return this.wrapNodeData(newNode.getRoot().getDocument(), nodeData);
 };
 
@@ -1699,6 +1701,7 @@ ve.ui.DiffElement.prototype.annotateNode = function (linearDiff) {
     start: 0,
     end: diffDoc.getLength(),
   });
+  console.log("annotatedLinearDiff", annotatedLinearDiff);
 
   return annotatedLinearDiff;
 };
