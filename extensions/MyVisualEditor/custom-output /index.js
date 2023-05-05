@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((html) => {
       // Do something with the HTML string
-      document.getElementById("container").innerHTML = html;
+      document.getElementById("diff-container").innerHTML = html;
     })
     .catch((error) => {
       // Handle any errors that occur

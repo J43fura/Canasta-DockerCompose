@@ -1720,7 +1720,7 @@ div.thumbinner {
   }
 
   a.new {
-    color: #ba0000;
+    /*  color: #ba0000; */
   }
 
   a.mw-selflink {
@@ -1740,7 +1740,7 @@ div.thumbinner {
   }
 
   a.new:visited {
-    color: #a55858;
+    /* color: #a55858;*/
   }
 
   .mw-parser-output a.extiw,

@@ -61,7 +61,8 @@ ve.ui.DiffElement = function VeUiDiffElement(visualDiff, config) {
       this.$sidebar.append(this.descriptions.$element)
     )
     .addClass("ve-ui-diffElement");
-  console.log("this.$element", this.$element);
+
+  console.log("this.$element[0]", this.$element[0]);
 };
 
 /* Inheritance */
@@ -353,6 +354,7 @@ ve.ui.DiffElement.prototype.renderDiff = function (diff, internalListDiff) {
   var documentSpacerNode = document.createElement("div");
   documentSpacerNode.setAttribute("class", "ve-ui-diffElement-spacer");
   documentSpacerNode.appendChild(document.createTextNode("⋮"));
+  console.log("⋮");
 
   var internalListSpacerNode = document.createElement("li");
   internalListSpacerNode.setAttribute(
